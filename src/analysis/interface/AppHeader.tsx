@@ -1,5 +1,8 @@
+// import {
+//   Flex, Image, Select, Title, Space, Grid, AppShell, Button,
+// } from '@mantine/core';
 import {
-  Flex, Image, Select, Title, Space, Grid, AppShell, Button,
+  Flex, Select, Title, Space, Grid, AppShell, Button,
 } from '@mantine/core';
 
 import { useLocation, useNavigate, useParams } from 'react-router';
@@ -21,7 +24,7 @@ export function AppHeader({ studyIds }: { studyIds: string[] }) {
       <Grid mt={-7} align="center">
         <Grid.Col span={6}>
           <Flex align="center" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-            <Image w={40} src={`${PREFIX}revisitAssets/revisitLogoSquare.svg`} alt="Revisit Logo" />
+            {/* <Image w={40} src={`${PREFIX}revisitAssets/revisitLogoSquare.svg`} alt="Revisit Logo" /> */}
             <Space w="md" />
             <Title order={4} style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {inAnalysis ? 'ReVISit Analytics Platform' : 'ReVISit Studies'}
