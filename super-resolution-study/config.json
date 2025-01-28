@@ -455,7 +455,7 @@
         "baseComponent": "filler",
         "parameters": {
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1773/app",
-          "pairNumber": 1
+          "pairNumber": 3
         },
         "response": [],
         "correctAnswer": [
@@ -469,7 +469,7 @@
         "baseComponent": "filler",
         "parameters": {
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11773/app",
-          "pairNumber": 1
+          "pairNumber": 3
         },
         "response": [],
         "correctAnswer": [
@@ -539,7 +539,7 @@
         "baseComponent": "filler",
         "parameters": {
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1774/app",
-          "pairNumber": 1
+          "pairNumber": 4
         },
         "response": [],
         "correctAnswer": [
@@ -553,7 +553,7 @@
         "baseComponent": "filler",
         "parameters": {
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11774/app",
-          "pairNumber": 1
+          "pairNumber": 4
         },
         "response": [],
         "correctAnswer": [
@@ -630,8 +630,8 @@
             "location": "aboveStimulus",
             "prompt": "To what extent do the super-resolution images make you confident in detecting cancerous regions?",
             "numItems": 5,
-            "leftLabel": "Less",
-            "rightLabel": "More"
+            "leftLabel": "Less confident",
+            "rightLabel": "More confident"
   
           },
           {
