@@ -4,6 +4,8 @@
 
 Thank you for participating in this pre-pilot version of our study to evaluate the effectiveness of super-resolution technology in cancer pathology image analysis. The purpose of the pre-pilot study is to gather feedback about the questions asked and the study design overall. This research aims to assess whether super-resolution imaging techniques improve the ability to detect and analyze cancer cells compared to traditional imaging methods.
 
+**Note**: The study browser is enabled in this version, so, you can navigate and explore. If you can not complete the study, still feel free to navigate to the **feedback** page and post your feedback!
+
 ### Instructions
 
 You will be presented with four pairs of cancer images side by side. In some images, the original images will be on the left and super-resolution images on the right and vice versa. Below are two demonstrations of these setups:
