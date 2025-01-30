@@ -711,6 +711,13 @@
           {
             "id": "q5-feedback",
             "type": "longText",
+            "required": true,
+            "location": "belowStimulus",
+            "prompt": "Is the amount of questions asked per pair (7) too much, too little, or just right?"
+          },
+          {
+            "id": "q6-feedback",
+            "type": "longText",
             "required": false,
             "location": "belowStimulus",
             "prompt": "Please provide any additional feedback or comments about the study."
