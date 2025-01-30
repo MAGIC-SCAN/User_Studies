@@ -4,7 +4,8 @@
 
 Thank you for participating in this pre-pilot version of our study to evaluate the effectiveness of super-resolution technology in cancer pathology image analysis. The purpose of the pre-pilot study is to gather feedback about the questions asked and the study design overall. This research aims to assess whether super-resolution imaging techniques improve the ability to detect and analyze cancer cells compared to traditional imaging methods.
 
-**Note**: The study browser is enabled in this version, so, you can navigate and explore. If you can not complete the study, still feel free to navigate to the **feedback** page and post your feedback!
+**Note**: The study browser is enabled in this version, so, you can navigate and explore. If you can not complete the study, still feel free to navigate to the **feedback** page and post your feedback!  
+This study is meant for the pathologists primarily. You may see some pages and questions that are specifically set for pre-pilot only.
 
 ### Instructions
 
