@@ -704,6 +704,13 @@
           {
             "id": "q4-feedback",
             "type": "longText",
+            "required": true,
+            "location": "belowStimulus",
+            "prompt": "In pre-pilot we are having 4 pairs, however, originally we plan to have twenty pairs, do you think we should have more/less pairs?"
+          },
+          {
+            "id": "q5-feedback",
+            "type": "longText",
             "required": false,
             "location": "belowStimulus",
             "prompt": "Please provide any additional feedback or comments about the study."
