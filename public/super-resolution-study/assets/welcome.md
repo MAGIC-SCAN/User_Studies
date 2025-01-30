@@ -22,7 +22,7 @@ The original and the super-resolution images are **synchronized**, meaning any i
 For each image pair, you will be asked to evaluate various aspects of image quality and cancerous region detection utility by scoring six metrices and one open-ended questions. The score is set for each metric on continous a scale of 0 to 100, where:
 - 0 = Left is better
 - 50 = Same
-- 1 = Right is better
+- 100 = Right is better
 
 Please take sufficient time to examine each image pair thoroughly before submitting your assessment. After completing all four image pairs, you will be asked to complete a brief post-study questionnaire. As part of the pre-pilot, there will be a feedback form at the very end of the study session.
 

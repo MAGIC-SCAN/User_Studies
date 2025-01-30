@@ -51,7 +51,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -80,7 +81,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -109,7 +111,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -138,7 +141,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -167,7 +171,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -196,7 +201,8 @@
                   "label": "right is better",
                   "value": 100
                 }
-              ]
+              ],
+              "withDivider": true
             }
           ]
         },
@@ -672,14 +678,35 @@
       "feedback": {
         "type": "questionnaire",
         "recordAudio": true,
+        "instruction": "Thank you for participating in this pre-pilot study. It would be great to have your valuable feedback on the study. Please note that, we are taking feedback in pre-pilot phase only and we really appreciate your honest feedback:",
         "response": [
           {
-            "id": "q-feedback",
+            "id": "q1-feedback",
             "type": "longText",
             "required": true,
-            "location": "aboveStimulus",
-            "prompt": "We are at the end of the study. Thank you for participating in this pre-pilot study. Please provide your honest feedback or comments about the study.",
-            "placeholder": "Type your feedback here"
+            "location": "belowStimulus",
+            "prompt": "What did you like about the study?"
+          },
+          {
+            "id": "q2-feedback",
+            "type": "longText",
+            "required": true,
+            "location": "belowStimulus",
+            "prompt": "What did you dislike about the study?"
+          },
+          {
+            "id": "q3-feedback",
+            "type": "longText",
+            "required": true,
+            "location": "belowStimulus",
+            "prompt": "We sent you a consent form in email, do you think we should again take your consent like we took at the beginning?"
+          },
+          {
+            "id": "q4-feedback",
+            "type": "longText",
+            "required": false,
+            "location": "belowStimulus",
+            "prompt": "Please provide any additional feedback or comments about the study."
           }
         ]
       }
