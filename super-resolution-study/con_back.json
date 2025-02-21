@@ -228,6 +228,23 @@
           "path": "super-resolution-study/assets/filler.tsx",
           "instruction": "Upon clicking \"Next\", you will be presented with a series of 7 questions, appearing one at a time. Please examine the pair thoroughly by zooming-in, panning, zooming-out as needed to observe the differences between original and super-resolution images to answer accordingly. To ensure unbiased evaluation, the position of the super-resolution image (left or right) has been randomized. Please notice carefully before answering.",
           "response": [
+            {
+              "id": "attention-check",
+              "type": "dropdown",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image is the super-resolution image? (Please select from the dropdown)",
+              "options": [
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                }
+              ]
+            }
           ]
         }
       },
@@ -278,7 +295,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1771/app",
           "pairNumber": 1
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "left"
+          }
+        ]
       },
       "filler-1-right": {
         "baseComponent": "filler",
@@ -286,7 +309,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11771/app",
           "pairNumber": 1
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "right"
+          }
+        ]
       },
       "pair1-q1-left":{
         "baseComponent": "Q1",
@@ -350,7 +379,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1772/app",
           "pairNumber": 2
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "left"
+          }
+        ]
       },
       "filler-2-right": {
         "baseComponent": "filler",
@@ -358,7 +393,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11772/app",
           "pairNumber": 2
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "right"
+          }
+        ]
       },
       "pair2-q1-left":{
         "baseComponent": "Q1",
@@ -422,7 +463,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1773/app",
           "pairNumber": 3
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "left"
+          }
+        ]
       },
       "filler-3-right": {
         "baseComponent": "filler",
@@ -430,7 +477,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11773/app",
           "pairNumber": 3
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "right"
+          }
+        ]
       },
       "pair3-q1-left":{
         "baseComponent": "Q1",
@@ -494,7 +547,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:1774/app",
           "pairNumber": 4
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "left"
+          }
+        ]
       },
       "filler-4-right": {
         "baseComponent": "filler",
@@ -502,7 +561,13 @@
           "websiteLink": "https://chpc2.nationalsciencedatafabric.org:11774/app",
           "pairNumber": 4
         },
-        "response": []
+        "response": [],
+        "correctAnswer": [
+          {
+            "id": "attention-check",
+            "answer": "right"
+          }
+        ]
       },
       "pair4-q1-left":{
         "baseComponent": "Q1",
