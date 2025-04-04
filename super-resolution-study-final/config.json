@@ -1,0 +1,2491 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+      "title": "Super resolution image evaluation for cancer detection",
+      "version": "1.0",
+      "authors": [
+        "The Magic-Scan Team - Utah"
+      ],
+      "date": "2025-04-04",
+      "description": "A study to evaluate the effectiveness of super resolution images for cancer detection.",
+      "organizations": [
+        "University of Utah",
+        "CEDMAV"
+      ]
+    },
+    "uiConfig": {
+      "contactEmail": "ishratjahan.eliza@utah.edu",
+      "helpTextPath": "super-resolution-study/assets/help.md",
+      "logoPath": "revisitAssets/revisitLogoSquare.svg",
+      "studyEndMsg": "**Thank you for your participation. Your responses have been recorded. If you have any questions feel free to contact us at [ishratjahan.eliza@utah.edu](mailto:ishratjahan.eliza@utah.edu)**",
+      "withProgressBar": false,
+      "autoDownloadStudy": false,
+      "sidebar": false,
+      "enumerateQuestions": false,
+      "sidebarWidth": 408,
+      "recordStudyAudio": true
+    }, 
+    "baseComponents": {
+        "Q1":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q1",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider cellular abnormalities, tissue organization, and structural changes",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image more accurately represents detailed pathological features?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q2":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q2",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider nuclear details, membrane boundaries, and cytoplasmic features",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image helps you to distinguish individual cellular structures better?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q3":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q3",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider whether any artifacts or artificial patterns are present that are not natural",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image better represents informative tissue textures?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q4":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q4",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider whether any artifacts or artificial patterns are present that are not natural",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image, if any, reports false tissue textures?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q5":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q5",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider the transitions between cellular structures",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image better defines the bundaries between tissue regions?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q6":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q6",
+              "type": "slider",
+              "startingValue": 50,
+              "secondaryText": "Consider the clarity and usefulness of details at higher magnification",
+              "required": true,
+              "location": "belowStimulus",
+              "prompt": "Which image maintains better zooming quality?",
+              "options": [
+                {
+                  "label": "left is better",
+                  "value": 0
+                },
+                {
+                  "label": "same",
+                  "value": 50
+                },
+                {
+                  "label": "right is better",
+                  "value": 100
+                }
+              ],
+              "withDivider": true
+            }
+          ]
+        },
+        "Q7":{
+          "type": "website",
+          "recordAudio": true,
+          "instruction": "Please zoom-in, pan, zoom-out as needed before answering the questions:",
+          "response": [
+            {
+              "id": "q7",
+              "type": "longText",
+              "secondaryText": "Reflect all your answers before making additional comments",
+              "required": false,
+              "location": "belowStimulus",
+              "prompt": "Please provide any additional comments or rationale behind choosing your answers.",
+              "placeholder": "Type your comments here"
+            }
+          ]
+        },
+        "filler": {
+          "type": "react-component",
+          "recordAudio": true,
+          "path": "super-resolution-study/assets/filler.tsx",
+          "instruction": "Upon clicking \"Next\", you will be presented with a series of 7 questions, appearing one at a time. Please examine the pair thoroughly by zooming-in, panning, zooming-out as needed to observe the differences between original and super-resolution images to answer accordingly. To ensure unbiased evaluation, the position of the super-resolution image (left or right) has been randomized. Please notice carefully before answering.",
+          "response": [
+          ]
+        }
+      },
+
+    "components": {
+      "welcome": {
+        "type": "markdown",
+        "recordAudio": false,
+        "path": "super-resolution-study/assets/welcome.md",
+        "response": []
+      },
+      "consent": {
+        "type": "markdown",
+        "recordAudio": false,
+        "path": "super-resolution-study/assets/consent.md",
+        "nextButtonText": "I Agree",
+        "response": [
+            {
+                      "id": "name",
+                      "prompt": "Please enter your name",
+                      "required": true,
+                      "location": "belowStimulus",
+                      "type": "shortText",
+                      "placeholder": "Name"
+            },
+            {
+                      "id": "consent",
+                      "prompt": "Do you consent to the study and wish to continue?",
+                      "required": true,
+                      "location": "belowStimulus",
+                      "type": "radio",
+                      "options": [
+                          {
+                              "label": "Decline",
+                              "value": "no"
+                          },
+                          {
+                              "label": "Accept",
+                              "value": "yes"
+                          }
+                      ]
+            }
+        ]
+      },
+    
+    "filler-1-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17701/app",
+        "pairNumber": 1,
+        "imageTitle": "1161_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-1-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17702/app",
+        "pairNumber": 1,
+        "imageTitle": "1161_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair1-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+    "pair1-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17701/app"
+    },
+    "pair1-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17702/app"
+    },
+
+    "filler-2-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17703/app",
+        "pairNumber": 2,
+        "imageTitle": "1161_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-2-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17704/app",
+        "pairNumber": 2,
+        "imageTitle": "1161_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair2-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+    "pair2-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17703/app"
+    },
+    "pair2-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17704/app"
+    },
+
+    "filler-3-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17705/app",
+        "pairNumber": 3,
+        "imageTitle": "1163_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-3-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17706/app",
+        "pairNumber": 3,
+        "imageTitle": "1163_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair3-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+    "pair3-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17705/app"
+    },
+    "pair3-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17706/app"
+    },
+
+    "filler-4-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17707/app",
+        "pairNumber": 4,
+        "imageTitle": "1164_Panel1.tiff"
+      },
+      "response": []
+    },
+    "filler-4-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17708/app",
+        "pairNumber": 4,
+        "imageTitle": "1164_Panel1.tiff"
+      },
+      "response": []
+    },
+    "pair4-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+    "pair4-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17707/app"
+    },
+    "pair4-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17708/app"
+    },
+
+    "filler-5-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17709/app",
+        "pairNumber": 5,
+        "imageTitle": "1164_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-5-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17710/app",
+        "pairNumber": 5,
+        "imageTitle": "1164_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair5-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+    "pair5-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17709/app"
+    },
+    "pair5-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17710/app"
+    },
+
+    "filler-6-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17711/app",
+        "pairNumber": 6,
+        "imageTitle": "1164_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-6-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17712/app",
+        "pairNumber": 6,
+        "imageTitle": "1164_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair6-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+    "pair6-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17711/app"
+    },
+    "pair6-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17712/app"
+    },
+
+    "filler-7-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17713/app",
+        "pairNumber": 7,
+        "imageTitle": "1165_Panel1.tiff"
+      },
+      "response": []
+    },
+    "filler-7-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17714/app",
+        "pairNumber": 7,
+        "imageTitle": "1165_Panel1.tiff"
+      },
+      "response": []
+    },
+    "pair7-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+    "pair7-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17713/app"
+    },
+    "pair7-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17714/app"
+    },
+
+    "filler-8-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17715/app",
+        "pairNumber": 8,
+        "imageTitle": "1165_Panel3.tiff"
+      },
+      "response": []
+    },
+    "filler-8-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17716/app",
+        "pairNumber": 8,
+        "imageTitle": "1165_Panel3.tiff"
+      },
+      "response": []
+    },
+    "pair8-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+    "pair8-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17715/app"
+    },
+    "pair8-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17716/app"
+    },
+
+    "filler-9-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17717/app",
+        "pairNumber": 9,
+        "imageTitle": "1166_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-9-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17718/app",
+        "pairNumber": 9,
+        "imageTitle": "1166_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair9-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+    "pair9-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17717/app"
+    },
+    "pair9-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17718/app"
+    },
+
+    "filler-10-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17719/app",
+        "pairNumber": 10,
+        "imageTitle": "1166_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-10-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17720/app",
+        "pairNumber": 10,
+        "imageTitle": "1166_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair10-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+    "pair10-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17719/app"
+    },
+    "pair10-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17720/app"
+    },
+
+    "filler-11-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17721/app",
+        "pairNumber": 11,
+        "imageTitle": "1169_Panel1.tiff"
+      },
+      "response": []
+    },
+    "filler-11-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17722/app",
+        "pairNumber": 11,
+        "imageTitle": "1169_Panel1.tiff"
+      },
+      "response": []
+    },
+    "pair11-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+    "pair11-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17721/app"
+    },
+    "pair11-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17722/app"
+    },
+
+    "filler-12-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17723/app",
+        "pairNumber": 12,
+        "imageTitle": "1169_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-12-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17724/app",
+        "pairNumber": 12,
+        "imageTitle": "1169_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair12-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "pair12-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17723/app"
+    },
+    "pair12-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17724/app"
+    },
+    "filler-13-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17725/app",
+        "pairNumber": 13,
+        "imageTitle": "1170_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-13-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17726/app",
+        "pairNumber": 13,
+        "imageTitle": "1170_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair13-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+    "pair13-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17725/app"
+    },
+    "pair13-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17726/app"
+    },
+     "filler-14-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17727/app",
+        "pairNumber": 14,
+        "imageTitle": "1175_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-14-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17728/app",
+        "pairNumber": 14,
+        "imageTitle": "1175_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair14-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+    "pair14-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17727/app"
+    },
+    "pair14-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17728/app"
+    },
+
+    "filler-15-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17729/app",
+        "pairNumber": 15,
+        "imageTitle": "1175_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-15-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17730/app",
+        "pairNumber": 15,
+        "imageTitle": "1175_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair15-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+    "pair15-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17729/app"
+    },
+    "pair15-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17730/app"
+    },
+
+    "filler-16-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17731/app",
+        "pairNumber": 16,
+        "imageTitle": "1177_Panel1.tiff"
+      },
+      "response": []
+    },
+    "filler-16-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17732/app",
+        "pairNumber": 16,
+        "imageTitle": "1177_Panel1.tiff"
+      },
+      "response": []
+    },
+    "pair16-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+    "pair16-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17731/app"
+    },
+    "pair16-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17732/app"
+    },
+
+    "filler-17-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17733/app",
+        "pairNumber": 17,
+        "imageTitle": "1177_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-17-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17734/app",
+        "pairNumber": 17,
+        "imageTitle": "1177_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair17-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+    "pair17-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17733/app"
+    },
+    "pair17-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17734/app"
+    },
+
+    "filler-18-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17735/app",
+        "pairNumber": 18,
+        "imageTitle": "1177_Panel4.tiff"
+      },
+      "response": []
+    },
+    "filler-18-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17736/app",
+        "pairNumber": 18,
+        "imageTitle": "1177_Panel4.tiff"
+      },
+      "response": []
+    },
+    "pair18-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+    "pair18-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17735/app"
+    },
+    "pair18-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17736/app"
+    },
+
+    "filler-19-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17737/app",
+        "pairNumber": 19,
+        "imageTitle": "1181_Panel1.tiff"
+      },
+      "response": []
+    },
+    "filler-19-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17738/app",
+        "pairNumber": 19,
+        "imageTitle": "1181_Panel1.tiff"
+      },
+      "response": []
+    },
+    "pair19-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+    "pair19-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17737/app"
+    },
+    "pair19-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17738/app"
+    },
+
+    "filler-20-left": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17739/app",
+        "pairNumber": 20,
+        "imageTitle": "1181_Panel2.tiff"
+      },
+      "response": []
+    },
+    "filler-20-right": {
+      "baseComponent": "filler",
+      "parameters": {
+        "websiteLink": "https://chpc2.nationalsciencedatafabric.org:17740/app",
+        "pairNumber": 20,
+        "imageTitle": "1181_Panel2.tiff"
+      },
+      "response": []
+    },
+    "pair20-q1-left": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q1-right": {
+      "baseComponent": "Q1",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q2-left": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q2-right": {
+      "baseComponent": "Q2",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q3-left": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q3-right": {
+      "baseComponent": "Q3",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q4-left": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q4-right": {
+      "baseComponent": "Q4",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q5-left": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q5-right": {
+      "baseComponent": "Q5",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q6-left": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q6-right": {
+      "baseComponent": "Q6",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+    "pair20-q7-left": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17739/app"
+    },
+    "pair20-q7-right": {
+      "baseComponent": "Q7",
+      "path": "https://chpc2.nationalsciencedatafabric.org:17740/app"
+    },
+
+      "post-study": {
+        "type": "questionnaire",
+        "recordAudio": true,
+        "response": [
+          {
+            "id": "q1",
+            "type": "likert",
+            "required": true,
+            "location": "aboveStimulus",
+            "prompt": "To what extent do the super-resolution images make you confident in detecting cancerous regions?",
+            "numItems": 5,
+            "leftLabel": "Less confident",
+            "rightLabel": "More confident"
+  
+          },
+          {
+            "id": "q2",
+            "type": "longText",
+            "required": true,
+            "location": "aboveStimulus",
+            "prompt": "What specific features or details are more visible in the super-resolution image compared to the original?"
+          },
+          {
+            "id": "q3",
+            "type": "longText",
+            "required": true,
+            "location": "aboveStimulus",
+            "prompt": "Are there any artifacts or distortions in the super-resolution image that could potentially interfere with detection?"
+          },
+          {
+            "id": "q4",
+            "type":"checkbox",
+            "secondaryText": "Please select all that apply",
+            "required": true,
+            "location": "aboveStimulus",
+            "prompt": "Which image would you prefer to use in practice?",
+            "options": [
+              "Original", "Neutral", "Super-resolution"
+            ]
+          },
+          {
+            "id": "q5",
+            "type":"longText",
+            "secondaryText": "Please select all that apply",
+            "required": true,
+            "location": "aboveStimulus",
+            "prompt": "Please write in detail the rationale behind your choice in question 4?"
+          }
+        ]
+      }
+    },
+  
+    "sequence": {
+      "order": "fixed",
+      "skip":[
+          {
+            "name": "consent",
+            "check": "response",
+            "responseId": "consent",
+            "value": "yes",
+            "comparison": "notEqual",
+            "to": "end"
+  
+        }
+      ],
+      "components": [
+        "welcome",
+        "consent",
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-1-left",
+                "pair1-q1-left",
+                "pair1-q2-left",
+                "pair1-q3-left",
+                "pair1-q4-left",
+                "pair1-q5-left",
+                "pair1-q6-left",
+                "pair1-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-1-right",
+                "pair1-q1-right",
+                "pair1-q2-right",
+                "pair1-q3-right",
+                "pair1-q4-right",
+                "pair1-q5-right",
+                "pair1-q6-right",
+                "pair1-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-2-left",
+                "pair2-q1-left",
+                "pair2-q2-left",
+                "pair2-q3-left",
+                "pair2-q4-left",
+                "pair2-q5-left",
+                "pair2-q6-left",
+                "pair2-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-2-right",
+                "pair2-q1-right",
+                "pair2-q2-right",
+                "pair2-q3-right",
+                "pair2-q4-right",
+                "pair2-q5-right",
+                "pair2-q6-right",
+                "pair2-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-3-left",
+                "pair3-q1-left",
+                "pair3-q2-left",
+                "pair3-q3-left",
+                "pair3-q4-left",
+                "pair3-q5-left",
+                "pair3-q6-left",
+                "pair3-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-3-right",
+                "pair3-q1-right",
+                "pair3-q2-right",
+                "pair3-q3-right",
+                "pair3-q4-right",
+                "pair3-q5-right",
+                "pair3-q6-right",
+                "pair3-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-4-left",
+                "pair4-q1-left",
+                "pair4-q2-left",
+                "pair4-q3-left",
+                "pair4-q4-left",
+                "pair4-q5-left",
+                "pair4-q6-left",
+                "pair4-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-4-right",
+                "pair4-q1-right",
+                "pair4-q2-right",
+                "pair4-q3-right",
+                "pair4-q4-right",
+                "pair4-q5-right",
+                "pair4-q6-right",
+                "pair4-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-5-left",
+                "pair5-q1-left",
+                "pair5-q2-left",
+                "pair5-q3-left",
+                "pair5-q4-left",
+                "pair5-q5-left",
+                "pair5-q6-left",
+                "pair5-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-5-right",
+                "pair5-q1-right",
+                "pair5-q2-right",
+                "pair5-q3-right",
+                "pair5-q4-right",
+                "pair5-q5-right",
+                "pair5-q6-right",
+                "pair5-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-6-left",
+                "pair6-q1-left",
+                "pair6-q2-left",
+                "pair6-q3-left",
+                "pair6-q4-left",
+                "pair6-q5-left",
+                "pair6-q6-left",
+                "pair6-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-6-right",
+                "pair6-q1-right",
+                "pair6-q2-right",
+                "pair6-q3-right",
+                "pair6-q4-right",
+                "pair6-q5-right",
+                "pair6-q6-right",
+                "pair6-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-7-left",
+                "pair7-q1-left",
+                "pair7-q2-left",
+                "pair7-q3-left",
+                "pair7-q4-left",
+                "pair7-q5-left",
+                "pair7-q6-left",
+                "pair7-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-7-right",
+                "pair7-q1-right",
+                "pair7-q2-right",
+                "pair7-q3-right",
+                "pair7-q4-right",
+                "pair7-q5-right",
+                "pair7-q6-right",
+                "pair7-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-8-left",
+                "pair8-q1-left",
+                "pair8-q2-left",
+                "pair8-q3-left",
+                "pair8-q4-left",
+                "pair8-q5-left",
+                "pair8-q6-left",
+                "pair8-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-8-right",
+                "pair8-q1-right",
+                "pair8-q2-right",
+                "pair8-q3-right",
+                "pair8-q4-right",
+                "pair8-q5-right",
+                "pair8-q6-right",
+                "pair8-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-9-left",
+                "pair9-q1-left",
+                "pair9-q2-left",
+                "pair9-q3-left",
+                "pair9-q4-left",
+                "pair9-q5-left",
+                "pair9-q6-left",
+                "pair9-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-9-right",
+                "pair9-q1-right",
+                "pair9-q2-right",
+                "pair9-q3-right",
+                "pair9-q4-right",
+                "pair9-q5-right",
+                "pair9-q6-right",
+                "pair9-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-10-left",
+                "pair10-q1-left",
+                "pair10-q2-left",
+                "pair10-q3-left",
+                "pair10-q4-left",
+                "pair10-q5-left",
+                "pair10-q6-left",
+                "pair10-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-10-right",
+                "pair10-q1-right",
+                "pair10-q2-right",
+                "pair10-q3-right",
+                "pair10-q4-right",
+                "pair10-q5-right",
+                "pair10-q6-right",
+                "pair10-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-11-left",
+                "pair11-q1-left",
+                "pair11-q2-left",
+                "pair11-q3-left",
+                "pair11-q4-left",
+                "pair11-q5-left",
+                "pair11-q6-left",
+                "pair11-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-11-right",
+                "pair11-q1-right",
+                "pair11-q2-right",
+                "pair11-q3-right",
+                "pair11-q4-right",
+                "pair11-q5-right",
+                "pair11-q6-right",
+                "pair11-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-12-left",
+                "pair12-q1-left",
+                "pair12-q2-left",
+                "pair12-q3-left",
+                "pair12-q4-left",
+                "pair12-q5-left",
+                "pair12-q6-left",
+                "pair12-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-12-right",
+                "pair12-q1-right",
+                "pair12-q2-right",
+                "pair12-q3-right",
+                "pair12-q4-right",
+                "pair12-q5-right",
+                "pair12-q6-right",
+                "pair12-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-13-left",
+                "pair13-q1-left",
+                "pair13-q2-left",
+                "pair13-q3-left",
+                "pair13-q4-left",
+                "pair13-q5-left",
+                "pair13-q6-left",
+                "pair13-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-13-right",
+                "pair13-q1-right",
+                "pair13-q2-right",
+                "pair13-q3-right",
+                "pair13-q4-right",
+                "pair13-q5-right",
+                "pair13-q6-right",
+                "pair13-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-14-left",
+                "pair14-q1-left",
+                "pair14-q2-left",
+                "pair14-q3-left",
+                "pair14-q4-left",
+                "pair14-q5-left",
+                "pair14-q6-left",
+                "pair14-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-14-right",
+                "pair14-q1-right",
+                "pair14-q2-right",
+                "pair14-q3-right",
+                "pair14-q4-right",
+                "pair14-q5-right",
+                "pair14-q6-right",
+                "pair14-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-15-left",
+                "pair15-q1-left",
+                "pair15-q2-left",
+                "pair15-q3-left",
+                "pair15-q4-left",
+                "pair15-q5-left",
+                "pair15-q6-left",
+                "pair15-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-15-right",
+                "pair15-q1-right",
+                "pair15-q2-right",
+                "pair15-q3-right",
+                "pair15-q4-right",
+                "pair15-q5-right",
+                "pair15-q6-right",
+                "pair15-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-16-left",
+                "pair16-q1-left",
+                "pair16-q2-left",
+                "pair16-q3-left",
+                "pair16-q4-left",
+                "pair16-q5-left",
+                "pair16-q6-left",
+                "pair16-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-16-right",
+                "pair16-q1-right",
+                "pair16-q2-right",
+                "pair16-q3-right",
+                "pair16-q4-right",
+                "pair16-q5-right",
+                "pair16-q6-right",
+                "pair16-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-17-left",
+                "pair17-q1-left",
+                "pair17-q2-left",
+                "pair17-q3-left",
+                "pair17-q4-left",
+                "pair17-q5-left",
+                "pair17-q6-left",
+                "pair17-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-17-right",
+                "pair17-q1-right",
+                "pair17-q2-right",
+                "pair17-q3-right",
+                "pair17-q4-right",
+                "pair17-q5-right",
+                "pair17-q6-right",
+                "pair17-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-18-left",
+                "pair18-q1-left",
+                "pair18-q2-left",
+                "pair18-q3-left",
+                "pair18-q4-left",
+                "pair18-q5-left",
+                "pair18-q6-left",
+                "pair18-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-18-right",
+                "pair18-q1-right",
+                "pair18-q2-right",
+                "pair18-q3-right",
+                "pair18-q4-right",
+                "pair18-q5-right",
+                "pair18-q6-right",
+                "pair18-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-19-left",
+                "pair19-q1-left",
+                "pair19-q2-left",
+                "pair19-q3-left",
+                "pair19-q4-left",
+                "pair19-q5-left",
+                "pair19-q6-left",
+                "pair19-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-19-right",
+                "pair19-q1-right",
+                "pair19-q2-right",
+                "pair19-q3-right",
+                "pair19-q4-right",
+                "pair19-q5-right",
+                "pair19-q6-right",
+                "pair19-q7-right"
+              ]
+            }
+          ]
+        },
+        {
+          "order": "latinSquare",
+          "numSamples": 1,
+          "components": [
+            {
+              "order": "fixed",
+              "components": [
+                "filler-20-left",
+                "pair20-q1-left",
+                "pair20-q2-left",
+                "pair20-q3-left",
+                "pair20-q4-left",
+                "pair20-q5-left",
+                "pair20-q6-left",
+                "pair20-q7-left"
+              ]
+            },
+            {
+              "order": "fixed",
+              "components": [
+                "filler-20-right",
+                "pair20-q1-right",
+                "pair20-q2-right",
+                "pair20-q3-right",
+                "pair20-q4-right",
+                "pair20-q5-right",
+                "pair20-q6-right",
+                "pair20-q7-right"
+              ]
+            }
+          ]
+        },
+        "post-study"
+      ]
+    }
+  }

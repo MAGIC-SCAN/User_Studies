@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0/src/parser/StudyConfigSchema.json",
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
       "title": "Super resolution image evaluation for cancer detection (pre-pilot)",
       "version": "pre-pilot",
@@ -52,7 +52,7 @@
                   "value": 100
                 }
               ],
-              "withDivider": true
+              "startingValue": 50
             }
           ]
         },
