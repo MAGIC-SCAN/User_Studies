@@ -30,20 +30,15 @@ export function ResponseSwitcher({
   configInUse: IndividualComponent;
   form: UseFormReturnType<StoredAnswer['answer']>;
 }) {
-  // const ans = (Object.keys(storedAnswer || {}).length > 0 ? { value: storedAnswer![response.id] } : answer) || { value: undefined };
-  // const ans = Object.keys(storedAnswer || {}).length > 0
-  // ? { value: storedAnswer![response.id] }
-  // : response.type === 'slider' && !answer.value
-  //   ? { ...answer, value: response.options[1].value }
-  //   : answer || { value: undefined };
-  let ans;
-  if (Object.keys(storedAnswer || {}).length > 0) {
-    ans = { value: storedAnswer![response.id] }; // if stored answer exists
-  } else if (response.type === 'slider' && !answer.value) {
-    ans = { ...answer, value: response.options[1].value }; // else if it's a slider with no value
-  } else {
-    ans = answer || { value: undefined }; // else use form answer or undefined
-  }
+  const ans = (Object.keys(storedAnswer || {}).length > 0 ? { value: storedAnswer![response.id] } : answer) || { value: undefined };
+  // let ans;
+  // if (Object.keys(storedAnswer || {}).length > 0) {
+  //   ans = { value: storedAnswer![response.id] }; // if stored answer exists
+  // } else if (response.type === 'slider' && !answer.value) {
+  //   ans = { ...answer, value: response.options[1].value }; // else if it's a slider with no value
+  // } else {
+  //   ans = answer || { value: undefined }; // else use form answer or undefined
+  // }
 
   // console.log('answer from form:', answer);
   // console.log('ans after processing:', ans);
