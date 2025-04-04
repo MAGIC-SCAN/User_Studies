@@ -19,8 +19,6 @@ import { REVISIT_MODE } from '../storage/engines/StorageEngine';
 import { FirebaseStorageEngine } from '../storage/engines/FirebaseStorageEngine';
 import { useAuth } from '../store/hooks/useAuth';
 
-const REVISIT_GITHUB_PUBLIC = 'https://github.com/revisit-studies/study/tree/main/public/';
-
 function StudyCard({ configName, config, url }: { configName: string; config: ParsedConfig<StudyConfig>; url: string }) {
   const { storageEngine } = useStorageEngine();
 
@@ -109,7 +107,7 @@ function StudyCard({ configName, config, url }: { configName: string; config: Pa
               <Anchor
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                href={`${REVISIT_GITHUB_PUBLIC}${url}`}
+                href={`${import.meta.env.VITE_REPO_URL}${url}`}
               >
                 View source:
                 {' '}
@@ -203,11 +201,11 @@ export function ConfigSwitcher({
   const { configsList } = globalConfig;
 
   const demos = configsList.filter((configName) => configName.startsWith('demo-'));
-  const tutorials = configsList.filter((configName) => configName.startsWith('tutorial-'));
+  const tutorials = configsList.filter((configName) => configName.startsWith('tutorial'));
   const examples = configsList.filter((configName) => configName.startsWith('example-'));
   const tests = configsList.filter((configName) => configName.startsWith('test-'));
   const libraries = configsList.filter((configName) => configName.startsWith('library-'));
-  const others = useMemo(() => configsList.filter((configName) => !configName.startsWith('demo-') && !configName.startsWith('tutorial-') && !configName.startsWith('example-') && !configName.startsWith('test-') && !configName.startsWith('library-')), [configsList]);
+  const others = useMemo(() => configsList.filter((configName) => !configName.startsWith('demo-') && !configName.startsWith('tutorial') && !configName.startsWith('example-') && !configName.startsWith('test-') && !configName.startsWith('library-')), [configsList]);
 
   const [otherStudyVisibility, setOtherStudyVisibility] = useState<Record<string, boolean>>({});
   useEffect(() => {

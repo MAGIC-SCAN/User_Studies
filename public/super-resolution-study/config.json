@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0/src/parser/StudyConfigSchema.json",
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
       "title": "Super resolution image evaluation for cancer detection (pre-pilot)",
       "version": "pre-pilot",
@@ -34,6 +34,7 @@
             {
               "id": "q1",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider cellular abnormalities, tissue organization, and structural changes",
               "required": true,
               "location": "belowStimulus",
@@ -64,6 +65,7 @@
             {
               "id": "q2",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider nuclear details, membrane boundaries, and cytoplasmic features",
               "required": true,
               "location": "belowStimulus",
@@ -94,6 +96,7 @@
             {
               "id": "q3",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider whether any artifacts or artificial patterns are present that are not natural",
               "required": true,
               "location": "belowStimulus",
@@ -124,6 +127,7 @@
             {
               "id": "q4",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider whether any artifacts or artificial patterns are present that are not natural",
               "required": true,
               "location": "belowStimulus",
@@ -154,6 +158,7 @@
             {
               "id": "q5",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider the transitions between cellular structures",
               "required": true,
               "location": "belowStimulus",
@@ -184,6 +189,7 @@
             {
               "id": "q6",
               "type": "slider",
+              "startingValue": 50,
               "secondaryText": "Consider the clarity and usefulness of details at higher magnification",
               "required": true,
               "location": "belowStimulus",

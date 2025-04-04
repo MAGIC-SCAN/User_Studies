@@ -1,11 +1,15 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.1/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
-    "super-resolution-study"
+    "super-resolution-study",
+    "super-resolution-study-final"
   ],
   "configs": {
     "super-resolution-study": {
       "path": "super-resolution-study/config.json"
+    },
+    "super-resolution-study-final": {
+      "path": "super-resolution-study-final/config.json"
     }
   }
 }
