@@ -15,7 +15,7 @@
     },
     "uiConfig": {
       "contactEmail": "ishratjahan.eliza@utah.edu",
-      "helpTextPath": "super-resolution-study/assets/help.md",
+      "helpTextPath": "super-resolution-study-final/assets/help.md",
       "logoPath": "revisitAssets/revisitLogoSquare.svg",
       "studyEndMsg": "**Thank you for your participation. Your responses have been recorded. If you have any questions feel free to contact us at [ishratjahan.eliza@utah.edu](mailto:ishratjahan.eliza@utah.edu)**",
       "withProgressBar": false,
@@ -227,14 +227,6 @@
               "placeholder": "Type your comments here"
             }
           ]
-        },
-        "filler": {
-          "type": "react-component",
-          "recordAudio": true,
-          "path": "super-resolution-study/assets/filler.tsx",
-          "instruction": "Upon clicking \"Next\", you will be presented with a series of 7 questions, appearing one at a time. Please examine the pair thoroughly by zooming-in, panning, zooming-out as needed to observe the differences between original and super-resolution images to answer accordingly. To ensure unbiased evaluation, the position of the super-resolution image (left or right) has been randomized. Please notice carefully before answering.",
-          "response": [
-          ]
         }
       },
 
@@ -242,13 +234,13 @@
       "welcome": {
         "type": "markdown",
         "recordAudio": false,
-        "path": "super-resolution-study/assets/welcome.md",
+        "path": "super-resolution-study-final/assets/welcome.md",
         "response": []
       },
       "consent": {
         "type": "markdown",
         "recordAudio": false,
-        "path": "super-resolution-study/assets/consent.md",
+        "path": "super-resolution-study-final/assets/consent.md",
         "nextButtonText": "I Agree",
         "response": [
             {
