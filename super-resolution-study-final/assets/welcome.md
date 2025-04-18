@@ -2,14 +2,11 @@
 
 ## Introduction
 
-Thank you for participating in this pre-pilot version of our study to evaluate the effectiveness of super-resolution technology in cancer pathology image analysis. The purpose of the pre-pilot study is to gather feedback about the questions asked and the study design overall. This research aims to assess whether super-resolution imaging techniques improve the ability to detect and analyze cancer cells compared to traditional imaging methods.
-
-**Note**: The study browser is enabled in this version, so, you can navigate and explore. If you can not complete the study, still feel free to navigate to the **feedback** page and post your feedback!  
-This study is meant for the pathologists primarily. You may see some pages and questions that are specifically set for pre-pilot only.
+Thank you for participating in our study to evaluate the effectiveness of super-resolution technology in cancer pathology image analysis. This research aims to assess whether super-resolution imaging techniques improve the ability to detect and analyze cancer cells compared to traditional imaging methods.
 
 ### Instructions
 
-You will be presented with four pairs of cancer images side by side. In some images, the original images will be on the left and super-resolution images on the right and vice versa. Below are two demonstrations of these setups:
+You will be presented with twenty pairs of cancer images side by side. In some images, the original images will be on the left and super-resolution images on the right and vice versa. Below are two demonstrations of these setups:
 <!-- - Left: Original image
 - Right: Super-resolution version of the same image -->
 
@@ -27,6 +24,6 @@ For each image pair, you will be asked to evaluate various aspects of image qual
 - 50 = Same
 - 100 = Right is better
 
-Please take sufficient time to examine each image pair thoroughly before submitting your assessment. After completing all four image pairs, you will be asked to complete a brief post-study questionnaire. As part of the pre-pilot, there will be a feedback form at the very end of the study session.
+Please take sufficient time to examine each image pair thoroughly before submitting your assessment. After completing all twenty image pairs, you will be asked to complete a brief post-study questionnaire. 
 
-Your careful consideration and detailed feedback are invaluable to our research. Please click "Next" to provide your consent and begin the study.
+Please click "Next" to provide your consent and begin the study.
