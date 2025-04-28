@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>External Website</title>
+   <style>
+       body, html {
+           margin: 0;
+           padding: 0;
+           width: 100%;
+           height: 100%;
+           overflow: hidden;
+       }
+
+       .iframe-container {
+           position: relative;
+           width: 100%;
+           height: 100%;
+           padding-bottom: 40px; /* Space for Next button */
+           overflow-y: auto;
+           overflow-x: hidden;
+       }
+
+       iframe {
+           width: 100%;
+           height: 100%;
+           border: none;
+           display: block;
+       }
+
+       @media screen and (min-width: 1200px) {
+           /* Adjustments for when study browser is closed */
+           .iframe-container {
+               max-width: none;
+           }
+           iframe {
+               height: calc(100vh - 40px);
+           }
+       }
+   </style>
+</head>
+<body>
+   <div class="iframe-container">
+       <iframe 
+           src="http://155.101.6.68:11744/app"
+           frameborder="0"
+           scrolling="yes"
+           allowfullscreen>
+           <p>Your browser does not support iframes. Visit the site directly at 
+               <a href="http://155.101.6.68:11744/app">here</a>
+           </p>
+       </iframe>
+   </div>
+</body>
+</html>
