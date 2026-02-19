@@ -232,7 +232,7 @@ export function MatrixInput({
                 alignItems: 'safe center',
                 justifyContent: 'end',
                 borderRight: '1px solid var(--mantine-color-dark-0)',
-                backgroundColor: `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
+                backgroundColor: 'var(--mantine-color-gray-2)',
                 overflowY: 'auto',
               }}
               ta="right"
@@ -259,7 +259,7 @@ export function MatrixInput({
                 flex: 1,
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
+                backgroundColor: 'var(--mantine-color-gray-2)',
               }}
             >
               {response.type === 'matrix-radio'

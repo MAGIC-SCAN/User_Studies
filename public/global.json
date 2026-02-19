@@ -4,7 +4,7 @@
     "super-resolution-study",
     "super-resolution-study-final-1",
     "super-resolution-study-final-2",
-    "tutorial",
+    "Magicview3D-user-study",
     "tutorial-replication",
     "demo-html",
     "demo-html-input",
@@ -63,6 +63,9 @@
     },
     "super-resolution-study-final-2": {
       "path": "super-resolution-study-final-2/config.json"
+    },
+    "Magicview3D-user-study": {
+      "path": "Magicview3D-user-study/config.json"
     },
     "tutorial-replication": {
       "path": "tutorial/replication-config.json"

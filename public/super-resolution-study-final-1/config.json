@@ -20,10 +20,10 @@
       "studyEndMsg": "**Thank you for your participation. Your responses have been recorded. If you have any questions feel free to contact us at [ishratjahan.eliza@utah.edu](mailto:ishratjahan.eliza@utah.edu)**",
       "withProgressBar": false,
       "autoDownloadStudy": false,
-      "sidebar": false,
+      "withSidebar": false,
       "enumerateQuestions": false,
       "sidebarWidth": 408,
-      "recordStudyAudio": true
+      "recordAudio": true
     }, 
     "baseComponents": {
         "Q1":{
