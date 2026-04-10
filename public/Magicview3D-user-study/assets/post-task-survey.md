@@ -1,1 +1,0 @@
-## Task-Specific Confidence Ratings
