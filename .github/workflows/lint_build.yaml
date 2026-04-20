@@ -11,4 +11,4 @@ on:
 
 jobs:
   lint:
-    uses: User-Studies/.github/.github/workflows/lint.yaml@main
+    uses: MAGIC-SCAN/User_Studies/.github/workflows/lint.yaml@main
