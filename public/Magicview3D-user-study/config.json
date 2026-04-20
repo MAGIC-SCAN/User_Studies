@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Magicview3D participant demographics, post-task survey & Nasa TLX and post-study interview",
+    "title": "Magicview3D post-task survey & Nasa TLX and post-study interview",
     "version": "test-version-1",
     "authors": [
       "The magic-scan-team"
@@ -39,7 +39,7 @@
         }
       ]
     },
-     "post-task-survey": {
+    "post-task-survey": {
         "type": "questionnaire",
         "response": [
                 {
